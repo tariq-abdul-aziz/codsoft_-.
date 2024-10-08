@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tariq Abdul Aziz - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e5a6302b31.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <p class="logo"><span>T</span>ariq.</p>
+                <ul id="sidemenu">
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#projects">PROJECTS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>FRONT-END DEVELOPER</p>
+                <h1>Hello Everyone,<br> I'm <span>Tariq</span><br>Abdul Aziz</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------About--------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/profile-pic.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">ABOUT ME</h1>
+                    <p>I’m Tariq Abdul Aziz, a front-end developer with a focus on creating clean, responsive, and
+                        user-friendly websites. I specialize in HTML, CSS, and JavaScript, crafting solutions that blend
+                        creativity and functionality. My goal is to deliver a seamless experience for users while
+                        continually refining my skills to stay ahead in the ever-evolving world of web development.</p>
+
+                    <div class="tab-tiles">
+                        <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                    </div>
+                    <div id="experience" class="tab-contents active-tab">
+                        <ul>
+                            <li><span>September 2024 - October 2024</span><br><strong>Web Development
+                                    Intern</strong><br><em>CodSoft</em></li>
+                            <li><span>May 2022 - June 2022</span><br><strong>Internship Trainee</strong><br><em>Twecto
+                                    Solutions Pvt Ltd</em></li>
+                        </ul>
+                    </div>
+                    <div id="skills" class="tab-contents">
+                        <ul>
+                            <li><span>Web Design:</span><br>Building structured, well-styled web pages with a focus on
+                                performance and usability.</li>
+                            <li><span>UI/UX Design:</span><br>Creating dynamic features and interactive elements to
+                                enhance user engagement.</li>
+                            <li><span>Responsive Design:</span><br>Optimizing layouts for smooth performance across all
+                                screen sizes and devices.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------PROJECTS------------- -->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">PROJECTS</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/personal portfolio image.png">
+                    <div class="layer">
+                        <h3>Personal Portfolio Website</h3>
+                        <p>Created a personal portfolio website to showcase my skills and projects, emphasizing modern
+                            design and functionality.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/landing-page.png">
+                    <div class="layer">
+                        <h3>Landing Page</h3>
+                        <p>Developed a responsive landing page with engaging UI elements and smooth animations,
+                            optimized for both desktop and mobile views.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/calculator.png">
+                    <div class="layer">
+                        <h3>Calculator Application</h3>
+                        <p>Developed a responsive calculator application with basic arithmetic functions, ensuring a
+                            user-friendly interface.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------CONTACT------------ -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">CONTACT ME</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>tariqabdulaziz7364@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>+91 93102 51494</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/tariQa.aziZrobinhood" target="_blank"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href="https://x.com/TariqAbdul_Aziz" target="_blank"><i
+                                class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/tariiq_aziz/" target="_blank"><i
+                                class="fa-brands fa-instagram-square"></i></a>
+                        <a href="https://www.linkedin.com/in/tariq-abdul-aziz/" target="_blank"><i
+                                class="fa-brands fa-linkedin" id="#linkedin-icon"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Tariq Abdul Aziz Made with <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+    
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add('active-link');
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
