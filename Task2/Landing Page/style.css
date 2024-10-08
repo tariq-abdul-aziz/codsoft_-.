@@ -1,0 +1,246 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: white;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-image: url('header-background.jpg');
+    background-size: cover;
+    color: black;
+    text-align: center;
+    padding: 0;
+}
+.logo{
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin-left: 55px;
+}
+.logo p span{
+    color: #f76b6a;
+}
+
+.read-button {
+    background-color: #ff6347;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.read-button:active {
+    background-color: #e5533d;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.9);
+    transform: translateY(3px);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-right: 55px;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+.nav-links a:hover{
+    color: red;
+}
+
+.hero-section h1 {
+    margin-top: 50px;
+    font-size: 3em;
+}
+
+.hero-section p {
+    font-size: 1.5em;
+}
+.image-1{
+    width: 90%;
+    margin-right: 20px;
+    background-color: transparent;
+}
+
+/* Features Section */
+#features {
+    background: linear-gradient(90deg, #f76b6a, #ff8c68);
+    padding: 50px;
+    color: #fff;
+    text-align: center;
+}
+
+.feature-cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.feature-card {
+    background-color: #fff;
+    padding: 20px;
+    width: 30%;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* About Section */
+#about {
+    padding: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.about-text {
+    margin-top: 50px;
+    width: 50%;
+}
+.about-text p{
+    margin-top: 20px;
+    overflow-wrap: break-word;
+    text-align: justify;
+    line-height: 1.2;
+}
+
+.about-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-left: 100px;
+}
+
+/* Services Section */
+#services {
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.service-cards {
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#services h2{
+    margin-bottom: 20px;
+}
+
+.service-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.service-card h3 {
+    margin-top: 15px;
+    font-size: 1.2em;
+}
+
+/* Contact Section  */
+#contact {
+    background: #f76b6a;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    letter-spacing: 3px;
+    font-size: 20px;
+}
+
+.contact-info {
+    display: inline-block;
+}
+
+.social-icons {
+   text-align: center;
+}
+
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icons a:hover{
+    /* color: #ff004f; */
+    transform: translateY(-5px);
+}
+
+.fa-facebook {
+    color: #4279ef;
+  }
+  .fa-twitter-square {
+    color: #1da1f2;
+  }
+  .fa-instagram-square {
+    color: #e4405f;
+  }
+  
+  .fa-linkedin {
+    color: #0e76a8;
+  }
+
+  .req-button {
+    background-color: #ff6347;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    margin-left: 42%;
+}
+
+.req-button:active {
+    background-color: #e5533d;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.9);
+    transform: translateY(3px);
+}
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
